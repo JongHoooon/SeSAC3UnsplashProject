@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SeSAC3UnsplashProject
+
+  Created by JongHoon on 2023/09/11.
+  
+*/
+
+"nickname_placeholder" = "ニックネームを入力してください。";
+
+"nickname_result" = "あなたのニックネームはくじらめしです。";
