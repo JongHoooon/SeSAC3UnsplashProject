@@ -17,7 +17,7 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let sample = Observable(value: "ooo")
+//        let sample = Observable(value: "ooo") 
 //        sample.bind { nick in
 //            print(nick, nick)
 //        }
