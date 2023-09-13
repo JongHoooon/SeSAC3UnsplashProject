@@ -7,25 +7,23 @@
 
 import Foundation
 
-class Person {
+class CustomObservable<T> {
     
-    var luckyNumber: Int?
-    var listener: (() -> Void)?
-    var name: String {
+    var listener: ((_ value: T) -> Void)?
+    var value: T {
         didSet {
-            listener?()
-            print("사용자의 이름이 \(name)로 변경되었습니다. 당신이 뽑은 행운의 숫자는 \(luckyNumber ?? 0)입니다.")
+            listener?(value)
+            print("사용자의 이름이 \(value)로 변경되었습니다.")
         }
     }
     
-    init(_ name: String) {
-        self.name = name
+    init(_ value: T) {
+        self.value = value
     }
     
-    func introduce(number: Int, sample: @escaping () -> Void) {
-        print("저는 \(name)이고 행운의 숫자는 \(number)입니다.")
-        sample()
-        luckyNumber = number
+    func introduce(_ sample: @escaping (_ value: T) -> Void) {
+        print("저는 \(value)입니다.")
+        sample(value)
         listener = sample
     }
 }

@@ -18,35 +18,35 @@ final class CalculateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let person = Person("새싹이")
-        person.name = "카스타드"
-        person.name = "칙촉"
-        person.introduce(
-            number: Int.random(in: 1...10),
-            sample: { [weak self] in
-                self?.view.backgroundColor = [
-                    UIColor.orange,
-                    UIColor.lightGray,
-                    UIColor.magenta
-                ].randomElement()!
-            }
-        )
+//        let person = CustomObservable("새싹이")
+//        person.value = "카스타드"
+//        person.value = "칙촉"
+//        person.introduce { [weak self] name in
+//            self?.resultLabel.text = name
+//            self?.view.backgroundColor = [
+//                UIColor.orange,
+//                UIColor.lightGray,
+//                UIColor.magenta
+//            ].randomElement()!
+//        }
+//
+//        DispatchQueue.main.asyncAfter(
+//            deadline: .now() + 1,
+//            execute: {
+//                person.value = "바나나"
+//                print("===1초뒤?====")
+//        })
+//
+//        DispatchQueue.main.asyncAfter(
+//            deadline: .now() + 3,
+//            execute: {
+//                person.value = "수박"
+//                print("===3초뒤?====")
+//        })
+//
+//        firstTextField.text = viewModel.firstNumber.value
+//        secondTextField.text = viewModel.secondNumber.value
+
         
-        DispatchQueue.main.asyncAfter(
-            deadline: .now() + 1,
-            execute: {
-                person.name = "바나나"
-                print("===1초뒤?====")
-        })
-        
-        DispatchQueue.main.asyncAfter(
-            deadline: .now() + 3,
-            execute: {
-                person.name = "수박"
-                print("===3초뒤?====")
-        })
-        
-        firstTextField.text = viewModel.firstNumber.value
-        secondTextField.text = viewModel.secondNumber.value
     }
 }
