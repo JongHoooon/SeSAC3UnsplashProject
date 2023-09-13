@@ -13,7 +13,7 @@ class CustomObservable<T> {
     var value: T {
         didSet {
             listener?(value)
-            print("사용자의 이름이 \(value)로 변경되었습니다.")
+            print("value가 \(value)로 변경되었습니다.")
         }
     }
     
@@ -21,7 +21,7 @@ class CustomObservable<T> {
         self.value = value
     }
     
-    func introduce(_ sample: @escaping (_ value: T) -> Void) {
+    func bind(_ sample: @escaping (_ value: T) -> Void) {
         print("저는 \(value)입니다.")
         sample(value)
         listener = sample

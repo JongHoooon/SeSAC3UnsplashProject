@@ -9,7 +9,7 @@ import Foundation
 
 class Observable<T> {
     
-    private var listener: ((T) -> Void)?
+    private var listener: ((_ value: T) -> Void)?
     
     var value: T {
         didSet {
@@ -21,7 +21,7 @@ class Observable<T> {
         self.value = value
     }
     
-    func bind(_ closure: @escaping (T) -> Void) {
+    func bind(_ closure: @escaping (_ value: T) -> Void) {
         print(#function)
         closure(value)
         listener = closure
