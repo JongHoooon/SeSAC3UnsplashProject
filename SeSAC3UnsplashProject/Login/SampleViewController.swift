@@ -64,12 +64,17 @@ extension SampleViewController: UITableViewDataSource {
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: "sampleCell",
-            for: indexPath
-        )
-        let data = viewModel.cellForRowAt(at: indexPath)
-        cell.textLabel?.text = data.introduce
+//        let cell = tableView.dequeueReusableCell(
+//            withIdentifier: "sampleCell",
+//            for: indexPath
+//        )
+//        let data = viewModel.cellForRowAt(at: indexPath)
+//        cell.textLabel?.text = data.introduce
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration()
+        content.text = "테스트"                              // text label
+        content.secondaryText = "안녕하세요 \(indexPath.row)" // detail text label
+        cell.contentConfiguration = content                // Protocol as Type
         return cell
     }
 }

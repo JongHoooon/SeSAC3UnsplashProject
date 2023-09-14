@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0F79D32AB296EA00175BD6 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0F79D22AB296EA00175BD6 /* SimpleTableViewController.swift */; };
 		ED1D833D2AAFF2F400C2A5A5 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D833C2AAFF2F400C2A5A5 /* Observable.swift */; };
 		ED1D833F2AAFFDF300C2A5A5 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D833E2AAFFDF300C2A5A5 /* SampleViewController.swift */; };
 		ED1D83412AB0015400C2A5A5 /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D83402AB0015400C2A5A5 /* SampleViewModel.swift */; };
@@ -24,6 +25,8 @@
 		ED4DACEB2AAEAE230095CD77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED4DACED2AAEAE230095CD77 /* Localizable.strings */; };
 		ED4DACF12AAEBADE0095CD77 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACF02AAEBADE0095CD77 /* String+Extension.swift */; };
 		ED4DACF42AAEBDD60095CD77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED4DACF62AAEBDD60095CD77 /* InfoPlist.strings */; };
+		ED5916742AB2A0080033F3CC /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5916732AB2A0080033F3CC /* SimpleCollectionViewController.swift */; };
+		ED5916772AB2A9DC0033F3CC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED5916762AB2A9DC0033F3CC /* SnapKit */; };
 		ED65C1902AB1A930000D6831 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65C18F2AB1A930000D6831 /* LottoViewController.swift */; };
 		ED65C1922AB1A939000D6831 /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65C1912AB1A939000D6831 /* LottoViewModel.swift */; };
 		ED6E200F2AB02DA3008D34F2 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6E200E2AB02DA3008D34F2 /* PhotoViewModel.swift */; };
@@ -35,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED0F79D22AB296EA00175BD6 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		ED1D833C2AAFF2F400C2A5A5 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		ED1D833E2AAFFDF300C2A5A5 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		ED1D83402AB0015400C2A5A5 /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		ED4DACF52AAEBDD60095CD77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED4DACF72AAEBDDA0095CD77 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED4DACF82AAEBDDA0095CD77 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED5916732AB2A0080033F3CC /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
 		ED65C18F2AB1A930000D6831 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		ED65C1912AB1A939000D6831 /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
 		ED6E200E2AB02DA3008D34F2 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
@@ -78,12 +83,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5916772AB2A9DC0033F3CC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED0F79D12AB296DB00175BD6 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				ED0F79D22AB296EA00175BD6 /* SimpleTableViewController.swift */,
+				ED5916732AB2A0080033F3CC /* SimpleCollectionViewController.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
 		ED1D83442AB02A4800C2A5A5 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +130,7 @@
 		ED4DACC92AAE992A0095CD77 /* SeSAC3UnsplashProject */ = {
 			isa = PBXGroup;
 			children = (
+				ED0F79D12AB296DB00175BD6 /* New */,
 				ED65C18E2AB1A7BE000D6831 /* Lotto */,
 				EDF8C66F2AB139B6000F768A /* Calculate */,
 				ED1D83442AB02A4800C2A5A5 /* Photo */,
@@ -181,6 +197,9 @@
 			dependencies = (
 			);
 			name = SeSAC3UnsplashProject;
+			packageProductDependencies = (
+				ED5916762AB2A9DC0033F3CC /* SnapKit */,
+			);
 			productName = SeSAC3UnsplashProject;
 			productReference = ED4DACC72AAE992A0095CD77 /* SeSAC3UnsplashProject.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +230,9 @@
 				ja,
 			);
 			mainGroup = ED4DACBE2AAE992A0095CD77;
+			packageReferences = (
+				ED5916752AB2A9DC0033F3CC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ED4DACC82AAE992A0095CD77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +280,9 @@
 				ED9B12DF2AB13AAA001DB7B3 /* CalculateViewModel.swift in Sources */,
 				ED8C8EA12AB1ADF400B4581D /* Lotto.swift in Sources */,
 				ED1D83432AB00E3F00C2A5A5 /* LoginViewModel.swift in Sources */,
+				ED0F79D32AB296EA00175BD6 /* SimpleTableViewController.swift in Sources */,
 				ED1D834C2AB02B4D00C2A5A5 /* PhotoViewController.swift in Sources */,
+				ED5916742AB2A0080033F3CC /* SimpleCollectionViewController.swift in Sources */,
 				ED65C1922AB1A939000D6831 /* LottoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +528,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED5916752AB2A9DC0033F3CC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED5916762AB2A9DC0033F3CC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED5916752AB2A9DC0033F3CC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED4DACBF2AAE992A0095CD77 /* Project object */;
 }
