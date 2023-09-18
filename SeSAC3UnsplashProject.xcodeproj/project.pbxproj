@@ -16,6 +16,8 @@
 		ED1D83492AB02A6B00C2A5A5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D83462AB02A6B00C2A5A5 /* Photo.swift */; };
 		ED1D834A2AB02A6B00C2A5A5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D83472AB02A6B00C2A5A5 /* APIKey.swift */; };
 		ED1D834C2AB02B4D00C2A5A5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D834B2AB02B4D00C2A5A5 /* PhotoViewController.swift */; };
+		ED28CF962AB7D92100206D69 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28CF952AB7D92100206D69 /* NumberViewModel.swift */; };
+		ED28CF982AB7E7B800206D69 /* NewSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28CF972AB7E7B800206D69 /* NewSimpleViewModel.swift */; };
 		ED4DACCB2AAE992A0095CD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACCA2AAE992A0095CD77 /* AppDelegate.swift */; };
 		ED4DACCD2AAE992A0095CD77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACCC2AAE992A0095CD77 /* SceneDelegate.swift */; };
 		ED4DACCF2AAE992A0095CD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACCE2AAE992A0095CD77 /* ViewController.swift */; };
@@ -36,6 +38,7 @@
 		ED9B12E12AB13DB0001DB7B3 /* BrickObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B12E02AB13DB0001DB7B3 /* BrickObservable.swift */; };
 		EDDABCB12AB740BD0003AAAC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDABCB02AB740BD0003AAAC /* SettingViewController.swift */; };
 		EDDABCB32AB747560003AAAC /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDABCB22AB747560003AAAC /* Setting.swift */; };
+		EDDABCB52AB7D3410003AAAC /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDABCB42AB7D3410003AAAC /* NumberViewController.swift */; };
 		EDF8C6712AB139E8000F768A /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8C6702AB139E8000F768A /* CalculateViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,8 @@
 		ED1D83462AB02A6B00C2A5A5 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		ED1D83472AB02A6B00C2A5A5 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		ED1D834B2AB02B4D00C2A5A5 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		ED28CF952AB7D92100206D69 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		ED28CF972AB7E7B800206D69 /* NewSimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleViewModel.swift; sourceTree = "<group>"; };
 		ED4DACC72AAE992A0095CD77 /* SeSAC3UnsplashProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC3UnsplashProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DACCA2AAE992A0095CD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4DACCC2AAE992A0095CD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 		ED9B12E02AB13DB0001DB7B3 /* BrickObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickObservable.swift; sourceTree = "<group>"; };
 		EDDABCB02AB740BD0003AAAC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EDDABCB22AB747560003AAAC /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		EDDABCB42AB7D3410003AAAC /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 		EDF8C6702AB139E8000F768A /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +105,7 @@
 			children = (
 				ED0F79D22AB296EA00175BD6 /* SimpleTableViewController.swift */,
 				ED5916732AB2A0080033F3CC /* SimpleCollectionViewController.swift */,
+				ED28CF972AB7E7B800206D69 /* NewSimpleViewModel.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -172,6 +179,8 @@
 				ED1D833C2AAFF2F400C2A5A5 /* Observable.swift */,
 				ED1D833E2AAFFDF300C2A5A5 /* SampleViewController.swift */,
 				ED1D83402AB0015400C2A5A5 /* SampleViewModel.swift */,
+				EDDABCB42AB7D3410003AAAC /* NumberViewController.swift */,
+				ED28CF952AB7D92100206D69 /* NumberViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -279,7 +288,9 @@
 				ED4DACF12AAEBADE0095CD77 /* String+Extension.swift in Sources */,
 				ED4DACCF2AAE992A0095CD77 /* ViewController.swift in Sources */,
 				ED4DACCB2AAE992A0095CD77 /* AppDelegate.swift in Sources */,
+				ED28CF962AB7D92100206D69 /* NumberViewModel.swift in Sources */,
 				ED9730862AAFED51005A3B92 /* LoginViewController.swift in Sources */,
+				EDDABCB52AB7D3410003AAAC /* NumberViewController.swift in Sources */,
 				ED9B12E12AB13DB0001DB7B3 /* BrickObservable.swift in Sources */,
 				ED1D833D2AAFF2F400C2A5A5 /* Observable.swift in Sources */,
 				ED4DACCD2AAE992A0095CD77 /* SceneDelegate.swift in Sources */,
@@ -298,6 +309,7 @@
 				EDDABCB12AB740BD0003AAAC /* SettingViewController.swift in Sources */,
 				ED0F79D32AB296EA00175BD6 /* SimpleTableViewController.swift in Sources */,
 				ED1D834C2AB02B4D00C2A5A5 /* PhotoViewController.swift in Sources */,
+				ED28CF982AB7E7B800206D69 /* NewSimpleViewModel.swift in Sources */,
 				ED5916742AB2A0080033F3CC /* SimpleCollectionViewController.swift in Sources */,
 				ED65C1922AB1A939000D6831 /* LottoViewModel.swift in Sources */,
 			);

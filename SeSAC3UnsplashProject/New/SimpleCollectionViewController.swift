@@ -16,19 +16,8 @@ final class NewSimpleCollectionViewController: UIViewController {
         case second = 1
     }
     
-    private var list = [
-        User(name: "Hue", age: 21),
-        User(name: "Hue", age: 21),
-        User(name: "Bran", age: 20),
-        User(name: "Kokojong", age: 20)
-    ]
-    private var list2 = [
-        User(name: "Hue", age: 21),
-        User(name: "Hue", age: 21),
-        User(name: "Bran", age: 20),
-        User(name: "Kokojong", age: 20)
-    ]
-    private lazy var lists = [list, list2]
+    var viewModel = NewSimpleViewModel()
+//    private lazy var lists = [list, list2]
     
     private let collectionView = UICollectionView(
         frame: .zero,
@@ -38,20 +27,38 @@ final class NewSimpleCollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let searchBar = UISearchBar()
+        searchBar.delegate = self
+        navigationItem.titleView = searchBar
         view.addSubview(collectionView)
         view.backgroundColor = .systemBackground
-//        collectionView.delegate = self
+        collectionView.delegate = self
 //        collectionView.dataSource = self
         collectionView.snp.makeConstraints {
             $0.edges.equalTo(view.safeAreaLayoutGuide)
         }
         configureDataSource()
+        
+        viewModel.list.bind { [weak self] _ in
+            self?.updateSnapshot()
+        }
+        
+        DispatchQueue.main.asyncAfter(
+            deadline: .now() + 2,
+            execute: { [weak self] in
+                self?.viewModel.append()
+        })
+        
+        
+    } // viewDidLoad
+    
+    func updateSnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<Section, User>()
         snapshot.appendSections(Section.allCases)
-        snapshot.appendItems(list, toSection: Section.second)
-        snapshot.appendItems(list2, toSection: Section.first)
+        snapshot.appendItems(viewModel.list.value, toSection: Section.first)
+        snapshot.appendItems(viewModel.list2, toSection: Section.second)
         dataSource.apply(snapshot)
-    } // viewDidLoad
+    }
     
     static private func createLayout() -> UICollectionViewLayout {
         var configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
@@ -96,6 +103,27 @@ final class NewSimpleCollectionViewController: UIViewController {
                 return cell
             }
         )
+    }
+}
+
+extension NewSimpleCollectionViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.insertUser(name: searchBar.text ?? "")
+    }
+}
+
+extension NewSimpleCollectionViewController: UICollectionViewDelegate {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
+//        let user = viewModel.list.value[indexPath.item]   -> 더 이상 사용하지 않음
+        
+        guard let item = dataSource.itemIdentifier(for: indexPath)
+        else { return }
+        dump(item)
+//        viewModel.removeUser(index: indexPath.item
     }
 }
 

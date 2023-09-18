@@ -15,12 +15,14 @@ final class PhotoViewModel {
         results: []
     ))
     
-    func fetchPhoto() {
+    func fetchPhoto(text: String) {
         APIService.shared.searchPhoto(
-            query: "sky",
+            query: text,
             completion: { photo in
-                guard let photo = photo else { return }
-                self.list.value = photo
+                DispatchQueue.main.async {
+                    guard let photo = photo else { return }
+                    self.list.value = photo
+                }
         })
     }
     
