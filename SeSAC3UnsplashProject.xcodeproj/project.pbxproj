@@ -18,6 +18,10 @@
 		ED1D834C2AB02B4D00C2A5A5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D834B2AB02B4D00C2A5A5 /* PhotoViewController.swift */; };
 		ED28CF962AB7D92100206D69 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28CF952AB7D92100206D69 /* NumberViewModel.swift */; };
 		ED28CF982AB7E7B800206D69 /* NewSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28CF972AB7E7B800206D69 /* NewSimpleViewModel.swift */; };
+		ED4251092AB89A6A00704D6D /* NetflixSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4251062AB89A6A00704D6D /* NetflixSignupViewModel.swift */; };
+		ED42510A2AB89A6A00704D6D /* SignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4251072AB89A6A00704D6D /* SignupTextField.swift */; };
+		ED42510B2AB89A6A00704D6D /* NetflixSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4251082AB89A6A00704D6D /* NetflixSignupViewController.swift */; };
+		ED42510D2AB89D4200704D6D /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42510C2AB89D4200704D6D /* Relay.swift */; };
 		ED4DACCB2AAE992A0095CD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACCA2AAE992A0095CD77 /* AppDelegate.swift */; };
 		ED4DACCD2AAE992A0095CD77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACCC2AAE992A0095CD77 /* SceneDelegate.swift */; };
 		ED4DACCF2AAE992A0095CD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DACCE2AAE992A0095CD77 /* ViewController.swift */; };
@@ -54,6 +58,10 @@
 		ED1D834B2AB02B4D00C2A5A5 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		ED28CF952AB7D92100206D69 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 		ED28CF972AB7E7B800206D69 /* NewSimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleViewModel.swift; sourceTree = "<group>"; };
+		ED4251062AB89A6A00704D6D /* NetflixSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetflixSignupViewModel.swift; sourceTree = "<group>"; };
+		ED4251072AB89A6A00704D6D /* SignupTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTextField.swift; sourceTree = "<group>"; };
+		ED4251082AB89A6A00704D6D /* NetflixSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetflixSignupViewController.swift; sourceTree = "<group>"; };
+		ED42510C2AB89D4200704D6D /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
 		ED4DACC72AAE992A0095CD77 /* SeSAC3UnsplashProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC3UnsplashProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DACCA2AAE992A0095CD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4DACCC2AAE992A0095CD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +130,17 @@
 			path = Photo;
 			sourceTree = "<group>";
 		};
+		ED4251052AB89A5100704D6D /* Netflix */ = {
+			isa = PBXGroup;
+			children = (
+				ED4251082AB89A6A00704D6D /* NetflixSignupViewController.swift */,
+				ED4251062AB89A6A00704D6D /* NetflixSignupViewModel.swift */,
+				ED4251072AB89A6A00704D6D /* SignupTextField.swift */,
+				ED42510C2AB89D4200704D6D /* Relay.swift */,
+			);
+			path = Netflix;
+			sourceTree = "<group>";
+		};
 		ED4DACBE2AAE992A0095CD77 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +160,7 @@
 		ED4DACC92AAE992A0095CD77 /* SeSAC3UnsplashProject */ = {
 			isa = PBXGroup;
 			children = (
+				ED4251052AB89A5100704D6D /* Netflix */,
 				EDDABCAF2AB7409F0003AAAC /* Setting */,
 				ED0F79D12AB296DB00175BD6 /* New */,
 				ED65C18E2AB1A7BE000D6831 /* Lotto */,
@@ -291,12 +311,15 @@
 				ED28CF962AB7D92100206D69 /* NumberViewModel.swift in Sources */,
 				ED9730862AAFED51005A3B92 /* LoginViewController.swift in Sources */,
 				EDDABCB52AB7D3410003AAAC /* NumberViewController.swift in Sources */,
+				ED42510D2AB89D4200704D6D /* Relay.swift in Sources */,
 				ED9B12E12AB13DB0001DB7B3 /* BrickObservable.swift in Sources */,
 				ED1D833D2AAFF2F400C2A5A5 /* Observable.swift in Sources */,
 				ED4DACCD2AAE992A0095CD77 /* SceneDelegate.swift in Sources */,
 				ED1D83482AB02A6B00C2A5A5 /* APIService.swift in Sources */,
 				ED1D83492AB02A6B00C2A5A5 /* Photo.swift in Sources */,
 				ED65C1902AB1A930000D6831 /* LottoViewController.swift in Sources */,
+				ED42510A2AB89A6A00704D6D /* SignupTextField.swift in Sources */,
+				ED42510B2AB89A6A00704D6D /* NetflixSignupViewController.swift in Sources */,
 				EDF8C6712AB139E8000F768A /* CalculateViewController.swift in Sources */,
 				ED1D83412AB0015400C2A5A5 /* SampleViewModel.swift in Sources */,
 				ED6E200F2AB02DA3008D34F2 /* PhotoViewModel.swift in Sources */,
@@ -304,6 +327,7 @@
 				EDDABCB32AB747560003AAAC /* Setting.swift in Sources */,
 				ED1D834A2AB02A6B00C2A5A5 /* APIKey.swift in Sources */,
 				ED9B12DF2AB13AAA001DB7B3 /* CalculateViewModel.swift in Sources */,
+				ED4251092AB89A6A00704D6D /* NetflixSignupViewModel.swift in Sources */,
 				ED8C8EA12AB1ADF400B4581D /* Lotto.swift in Sources */,
 				ED1D83432AB00E3F00C2A5A5 /* LoginViewModel.swift in Sources */,
 				EDDABCB12AB740BD0003AAAC /* SettingViewController.swift in Sources */,
